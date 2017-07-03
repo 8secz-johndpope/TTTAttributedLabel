@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import <CoreText/CoreText.h>
 
 //! Project version number for TTTAttributedLabel.
@@ -246,6 +247,11 @@ IB_DESIGNABLE
  The attributed string to apply to the truncation token at the end of a truncated line.
  */
 @property (nonatomic, strong) IBInspectable NSAttributedString *attributedTruncationToken;
+
+/**
+ The position of the truncation token.
+ */
+@property (nonatomic, assign) CFIndex attributedTruncationTokenPosition;
 
 ///--------------------------
 /// @name Long press gestures

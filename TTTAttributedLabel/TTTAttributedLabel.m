@@ -781,6 +781,7 @@ static inline CGSize CTFramesetterSuggestFrameSizeForAttributedStringWithConstra
                         truncationAttributePosition += (lastLineRange.length - 1);
                         break;
                 }
+                self.attributedTruncationTokenPosition = truncationAttributePosition;
 
                 NSAttributedString *attributedTruncationString = self.attributedTruncationToken;
                 if (!attributedTruncationString) {
