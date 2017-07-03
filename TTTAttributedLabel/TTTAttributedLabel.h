@@ -247,6 +247,11 @@ IB_DESIGNABLE
  */
 @property (nonatomic, strong) IBInspectable NSAttributedString *attributedTruncationToken;
 
+/**
+ The position of the truncation token.
+ */
+@property (nonatomic, strong) CFIndex *attributedTruncationTokenPosition;
+
 ///--------------------------
 /// @name Long press gestures
 ///--------------------------
