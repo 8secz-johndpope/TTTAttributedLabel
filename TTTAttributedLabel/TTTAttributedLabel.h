@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import <CoreText/CoreText.h>
 
 //! Project version number for TTTAttributedLabel.
@@ -250,7 +251,7 @@ IB_DESIGNABLE
 /**
  The position of the truncation token.
  */
-@property (nonatomic, strong) CFIndex *attributedTruncationTokenPosition;
+@property (nonatomic, assign) CFIndex attributedTruncationTokenPosition;
 
 ///--------------------------
 /// @name Long press gestures
