@@ -1607,7 +1607,6 @@ afterInheritingLabelAttributesAndConfiguringWithBlock:(NSMutableAttributedString
     [coder encodeInteger:self.verticalAlignment forKey:NSStringFromSelector(@selector(verticalAlignment))];
 
     [coder encodeObject:self.attributedTruncationToken forKey:NSStringFromSelector(@selector(attributedTruncationToken))];
-    [coder encodeObject:self.attributedTruncationTokenPosition forKey:NSStringFromSelector(@selector(attributedTruncationTokenPosition))];
 
     [coder encodeObject:NSStringFromUIEdgeInsets(self.linkBackgroundEdgeInset) forKey:NSStringFromSelector(@selector(linkBackgroundEdgeInset))];
     [coder encodeObject:self.attributedText forKey:NSStringFromSelector(@selector(attributedText))];
