@@ -1699,10 +1699,6 @@ afterInheritingLabelAttributesAndConfiguringWithBlock:(NSMutableAttributedString
     if ([coder containsValueForKey:NSStringFromSelector(@selector(attributedTruncationToken))]) {
         self.attributedTruncationToken = [coder decodeObjectForKey:NSStringFromSelector(@selector(attributedTruncationToken))];
     }
-    
-    if ([coder containsValueForKey:NSStringFromSelector(@selector(attributedTruncationTokenPosition))]) {
-        self.attributedTruncationTokenPosition = [coder decodeObjectForKey:NSStringFromSelector(@selector(attributedTruncationTokenPosition))];
-    }
 
     if ([coder containsValueForKey:NSStringFromSelector(@selector(linkBackgroundEdgeInset))]) {
         self.linkBackgroundEdgeInset = UIEdgeInsetsFromString([coder decodeObjectForKey:NSStringFromSelector(@selector(linkBackgroundEdgeInset))]);
